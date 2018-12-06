@@ -14,7 +14,7 @@ const titles = {
   'compose': 'Compose',
   'datatable': 'Datatable',
   'email': 'Email',
-  'forms': 'Forms',
+  'CadUser': 'Cadastro de Novo Usuário',
   'google-maps': 'Google Maps',
   'signin': 'Signin',
   'signup': 'Signup',
