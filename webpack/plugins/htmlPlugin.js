@@ -5,24 +5,8 @@ const
 
 const titles = {
   'index': 'Dashboard',
-  'blank': 'Blank',
-  'buttons': 'Buttons',
-  'calendar': 'Calendar',
-  'charts': 'Charts',
   'home': 'Home',
-  'chat': 'Chat',
-  'compose': 'Compose',
-  'datatable': 'Datatable',
-  'email': 'Email',
-  'CadUser': 'Cadastro de Novo Usuário',
-  'google-maps': 'Google Maps',
-  'signin': 'Signin',
-  'signup': 'Signup',
-  'ui': 'UI',
-  'vector-maps': 'Vector Maps',
-  '404': '404',
-  '500': '500',
-  'basic-table': 'Basic Table',
+  'CadUser': 'Cadastro de Novo Usuário'
 };
 
 module.exports = Object.keys(titles).map(title => {
