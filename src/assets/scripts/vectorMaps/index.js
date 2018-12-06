@@ -51,7 +51,16 @@ export default (function () {
           latLng : [-16.7573, -49.4412],
           name : 'Abadia de Goiás : 350',
         }, {
-          latLng : [-18.4831, -47.3916],
+          latLng : [-18.4831, -45.3916],
+          name : 'Abadia dos Dourados',
+        }, {
+          latLng : [-21.4831, -44.3916],
+          name : 'Abadia dos Dourados',
+        }, {
+          latLng : [-18.9731, -50.1216],
+          name : 'Abadia dos Dourados',
+        }, {
+          latLng : [-15.4831, -46.3916],
           name : 'Abadia dos Dourados',
         }],
         series: {
