@@ -7,7 +7,8 @@ const titles = {
   'index': 'Dashboard',
   'home': 'Home',
   'CadUser': 'Cadastro de Novo Usuário',
-  'ManUser': 'Manutenção de Usuário'
+  'ManUser': 'Manutenção de Usuário',
+  'NovLinha':'Nova Linha'
 };
 
 module.exports = Object.keys(titles).map(title => {
