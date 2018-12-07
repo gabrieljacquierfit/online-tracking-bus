@@ -10,7 +10,7 @@ const titles = {
   'ManUser': 'Manutenção de Usuário',
   'NovLinha':'Nova Linha',
   'ManLinha': 'Manutenção de Linha',
-  'RelUserLinh':'Usuários por Linha'
+  'RelUserLinh':'Ocupação (Linha x Passageiro)'
 };
 
 module.exports = Object.keys(titles).map(title => {
