@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Online Track Bus - Monitoramento</title>
-
+    <title>Online Tracking Bus - Manutenção</title>
     <style>
       #loader {
         transition: all 0.3s ease-in-out;
@@ -21,6 +20,8 @@
         opacity: 0;
         visibility: hidden;
       }
+
+
 
       .spinner {
         width: 40px;
@@ -138,25 +139,17 @@
             <li class="nav-item">
               <a class='sidebar-link' href="ManUser.html">
                 <span class="icon-holder">
-                  <i class="c-light-blue-500 ti-pencil"></i>
+                  <i class="c-brown-500 ti-email"></i>
                 </span>
                 <span class="title">Manutenção de Usuário</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class='sidebar-link' href="NovLinha.html">
+              <a class='sidebar-link' href="compose.html">
                 <span class="icon-holder">
                   <i class="c-blue-500 ti-share"></i>
                 </span>
                 <span class="title">Nova Linha</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class='sidebar-link' href="ManLinha.html">
-                <span class="icon-holder">
-                  <i class="c-blue-500 ti-share"></i>
-                </span>
-                <span class="title">Manutenção de Linha</span>
               </a>
             </li>
             <li class="nav-item">
@@ -196,7 +189,9 @@
               </ul>
             </li>
           </ul>
+          </div>
         </div>
+  
       </div>
 
       <!-- #Main ============================ -->
@@ -256,66 +251,62 @@
         <!-- ### $App Screen Content ### -->
         <main class='main-content bgc-grey-100'>
           <div id='mainContent'>
-            <div class="row gap-20 masonry pos-r">
-              <div class="masonry-sizer col-md-6"></div>
-              <div class="masonry-item  w-100">
-                <div class="row gap-20">
-                  <!-- #Toatl Visits ==================== -->
-                  <div class='col-md-6'>
-                    <div class="layers bd bgc-white p-20">
-                      <div class="layer w-100 mB-10">
-                        <h6 class="lh-1">Total de usuários ativos</h6>
-                      </div>
-                      <div class="layer w-100">
-                        <div class="peers ai-sb fxw-nw">
-                          <div class="peer peer-greed">
-                            <span id="sparklinedash"></span>
-                          </div>
-                          <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-green-50 c-green-500">1293</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- #Total Page Views ==================== -->
-                  <div class='col-md-6'>
-                    <div class="layers bd bgc-white p-20">
-                      <div class="layer w-100 mB-10">
-                        <h6 class="lh-1">Total de onibûs em atividade</h6>
-                      </div>
-                      <div class="layer w-100">
-                        <div class="peers ai-sb fxw-nw">
-                          <div class="peer peer-greed">
-                            <span id="sparklinedash2"></span>
-                          </div>
-                          <div class="peer">
-                            <span class="d-ib lh-0 va-m fw-600 bdrs-10em pX-15 pY-15 bgc-red-50 c-red-500">68</span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+            <div class="container-fluid">
+              <h4 class="c-grey-900 mT-10 mB-30">Online Tracking Bus - Manutenção</h4>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <h4 class="c-grey-900 mB-20">Tabela de Usuário</h4>
+                    <table id="dataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                        <thead>
+                          <tr>
+                            <th>Turno da linha</th>
+                            <th>N° da linha</th>
+                            <th>Observação</th>
+                          </tr>
+                        </thead>
+                        <tfoot>
+                          <tr>
+                            <th>Turno da linha</th>
+                            <th>N° da linha</th>
+                            <th>Observação</th>
+                          </tr>
+                        </tfoot>
+                        <tbody>
+                          <tr>
+                            <td>1º</td>
+                            <td>7</td>
+                            <td>Linha da zona norte</td>
+                          </tr>
+                          <tr>
+                            <td>1º</td>
+                            <td>78</td>
+                            <td>Linha da zona leste</td>
+                          </tr>
+                          <tr>
+                            <td>3º</td>
+                            <td>74</td>
+                            <td>Linha da zona oeste</td>
+                          </tr>
+                          <tr>
+                            <td>ADM</td>
+                            <td>55</td>
+                            <td>Linha da zona norte</td>
+                          </tr>
+                          <tr>
+                            <td>2º</td>
+                            <td>55</td>
+                            <td>Linha da zona norte</td>
+                          </tr>
+                          <tr>
+                            <td>1º</td>
+                            <td>23</td>
+                            <td>Linha da zona norte</td>
+                          </tr>
+                        </tbody>
+                      </table>
                   </div>
                 </div>
-              </div>
-              <div class="masonry-item col-12">
-                <!-- #Site Visits ==================== -->
-                <main class='main-content bgc-grey-100'>
-                    <div id='mainContent'>
-                      <div class="container-fluid">
-                        <h4 class="c-grey-900 mT -10 mB-30">Google Maps</h4>
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div class="bgc-white bd bdrs-3 p-20 mB-20">
-                              <h6 class="c-grey-900 mB-20">Google Maps</h6>
-                              <div id="google-map" style="padding-bottom: 75%;"></div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </main>
               </div>
             </div>
           </div>
