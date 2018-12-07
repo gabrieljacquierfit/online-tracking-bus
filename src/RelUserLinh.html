@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Cadastro de Usuário</title>
+    <title>Basic Table</title>
     <style>
       #loader {
         transition: all 0.3s ease-in-out;
@@ -20,6 +20,8 @@
         opacity: 0;
         visibility: hidden;
       }
+
+
 
       .spinner {
         width: 40px;
@@ -97,11 +99,11 @@
                   <div class="peers ai-c fxw-nw">
                     <div class="peer">
                       <div class="logo">
-                        <img style="width: 50px; margin-top: 7px; margin-left: 8px;" src="assets/static/images/icon-bus-1.png" alt="">
+                        <img src="assets/static/images/logo.png" alt="">
                       </div>
                     </div>
                     <div class="peer peer-greed">
-                      <h5 class="lh-1 mB-0 logo-text">Online Tracking Bus</h5>
+                      <h5 class="lh-1 mB-0 logo-text">Adminator</h5>
                     </div>
                   </div>
                 </a>
@@ -189,7 +191,6 @@
           </ul>
         </div>
       </div>
-
            <!-- #Main ============================ -->
            <div class="page-container">
             <!-- ### $Topbar ### -->
@@ -244,109 +245,205 @@
               </div>
             </div>
     
-
         <!-- ### $App Screen Content ### -->
         <main class='main-content bgc-grey-100'>
           <div id='mainContent'>
-            <div class="row gap-20 masonry pos-r">
-              <div class="masonry-sizer col-md-6"></div>
-              <div class="masonry-item col-md-6">
-                <div class="bgc-white p-20 bd">
-                  <h6 class="c-grey-900">Novo Usuário</h6>
-                  <div class="mT-30">
-                    <form>
-                      <div class="form-group">
-                        <label for="exampleInputWorkday">Número de Workday:</label>
-                        <input type="workday" class="form-control" id="Workday" aria-describedby="Número do Worday" placeholder="Entre com o número">
-                        <small id="workday" class="form-text text-muted">Informações confidênciais</small>
-                      </div>
-                      <div class="form-group">
-                        <label for="exampleInputEndereco">Endereço:</label>
-                        <input type="Endereço" class="form-control" id="exampleInputEndereco" placeholder="Entre com o Endereço">
-                      </div>
-                      
-                      <button type="submit" class="btn btn-primary">Pesquisar</button>
-
-                      <form>
-                        <fieldset disabled>
-                          <div class="form-group">
-                            <label for="disabledSelect">Turno</label>
-                            <select id="disabledSelect" class="form-control">
-                              <option>Selecione Turno</option>
-                              <option>1° Turno</option>
-                              <option>2° Turno</option>
-                              <option>3° Turno</option>
-                              <option>ADM° Turno</option>
-                            </select>
-                          </div>
-
-                          <div class="form-group">
-                            <label for="disabledSelect">Linha</label>
-                            <select id="disabledSelect" class="form-control">
-                              <option>Selecione a Linha</option>
-                              <option>1</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                              <option>5</option>
-                              <option>6</option>
-                            </select>
-                          </div>
-                          </fieldset>
-                      </form>
-
-                      <button type="submit" class="btn btn-primary">Salvar</button>
-                      <button type="submit" class="btn btn-primary">Cancelar</button>
-                    </form>
+            <div class="container-fluid">
+              <h4 class="c-grey-900 mT-10 mB-30">Basic Tables</h4>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <h4 class="c-grey-900 mB-20">Simple Table</h4>
+                    <p>Using the most basic table markup, here’s how <code class="highlighter-rouge">.table</code>-based tables look in Bootstrap. <strong>All table styles are inherited in Bootstrap 4</strong>, meaning any nested tables will be styled in the same manner as the parent.</p>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First Name</th>
+                          <th scope="col">Last Name</th>
+                          <th scope="col">Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
               </div>
-              <div class="masonry-item col-md-6">
-                <div class="bgc-white p-20 bd">
-                  <h6 class="c-grey-900">Rotas Próximas</h6>
-                  <div class="mT-30">
-                    <form></form>
-                      <div class="form-row">
-                        <label for="disabledSelect">Linha 12</label>
-                          <p>
-                        <img style="width: 90%;" src="assets/static/images/Maps1.PNG" alt="">
-                        
-                        <div style="width: 90%;" class= "form-row"> 
-                            <label for="disabledSelect">180m</label>
-                        </div>
-                        
-                        <div style="width: 90%;" class= "form-row"> 
-                            <label for="disabledSelect">Rua Cesario Mota</label>
-                        </div>                                       
-                                                    
-                      </div>
-                      <div class="form-group">
-                        
-                      </div>
-                      <div class="form-row">
-                        
-                        </div>
-                        <div class="form-group col-md-4">
-                          
-                        </div>
-                        <div class="form-group col-md-2">
-                          
-                        </div>
-                      </div>
-                      <div class="form-row">
-                        <div class="form-group col-md-6">
-                          
-                        </div>
-                      </div>
-                      <div class="form-group">
-                        
-                        
-                      </div>
-                      
-                    </form>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <h4 class="c-grey-900 mB-20">Table head options</h4>
+                    <p>Similar to tables and dark tables, use the modifier classes <code class="highlighter-rouge">.thead-light</code> or <code class="highlighter-rouge">.thead-dark</code> to make <code class="highlighter-rouge">&lt;thead&gt;</code>s appear light or dark gray.</p>
+                    <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First Name</th>
+                          <th scope="col">Last Name</th>
+                          <th scope="col">Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
                   </div>
                 </div>
-              </div>              
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <h4 class="c-grey-900 mB-20">Striped rows</h4>
+                    <p>Use <code class="highlighter-rouge">.table-striped</code> to add zebra-striping to any table row within the <code class="highlighter-rouge">&lt;tbody&gt;</code>.</p>
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First Name</th>
+                          <th scope="col">Last Name</th>
+                          <th scope="col">Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <h4 class="c-grey-900 mB-20">Bordered table</h4>
+                    <p>Add <code class="highlighter-rouge">.table-bordered</code> for borders on all sides of the table and cells.</p>
+                    <table class="table table-bordered">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First Name</th>
+                          <th scope="col">Last Name</th>
+                          <th scope="col">Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@TwBootstrap</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20">
+                    <h4 class="c-grey-900 mB-20">Hoverable rows</h4>
+                    <p>Add <code class="highlighter-rouge">.table-hover</code> to enable a hover state on table rows within a <code class="highlighter-rouge">&lt;tbody&gt;</code>.</p>
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">First Name</th>
+                          <th scope="col">Last Name</th>
+                          <th scope="col">Username</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </main>

@@ -4,12 +4,13 @@ const
   HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const titles = {
-  'index': 'Dashboard',
-  'home': 'Home',
+  'index': 'Logout',
+  'home': 'Painel Principal',
   'CadUser': 'Cadastro de Novo Usuário',
   'ManUser': 'Manutenção de Usuário',
   'NovLinha':'Nova Linha',
-  'ManLinha': 'Manutenção de Linha'
+  'ManLinha': 'Manutenção de Linha',
+  'RelUserLinh':'Usuários por Linha'
 };
 
 module.exports = Object.keys(titles).map(title => {
